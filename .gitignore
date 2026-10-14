@@ -1,0 +1,7 @@
+/bin/
+/dist/
+# snapshots contain paths and user names of the scanned server
+/snapshots/
+/snapshots.collect.log
+/synthdata/
+.space-cache/

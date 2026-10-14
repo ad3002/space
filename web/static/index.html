@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>space</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='1' width='9' height='14' rx='2' fill='%232a78d6'/><rect x='11' y='1' width='4' height='6' rx='1.5' fill='%23eb6834'/><rect x='11' y='8' width='4' height='7' rx='1.5' fill='%231baf7a'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/overview">space</a>
+  <div class="pickers">
+    <label>Серия <select id="series" aria-label="Серия снимков"></select></label>
+    <label>Снимок <select id="snap" aria-label="Снимок"></select></label>
+  </div>
+  <nav id="nav" aria-label="Разделы">
+    <a href="#/overview" data-route="overview">Обзор</a>
+    <a href="#/explore" data-route="explore">Проводник</a>
+    <a href="#/owners" data-route="owners">Владельцы</a>
+    <a href="#/types" data-route="types">Типы файлов</a>
+    <a href="#/reclaim" data-route="reclaim">Что освободить</a>
+    <a href="#/trend" data-route="trend">Динамика</a>
+    <a href="#/snapshots" data-route="snapshots">Снимки</a>
+  </nav>
+</header>
+<div id="banners" class="wrap"></div>
+<main id="view" class="wrap" aria-live="polite"></main>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="core.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="views2.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
